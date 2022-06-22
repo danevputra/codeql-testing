@@ -1,0 +1,21 @@
+name: Testing Pull
+
+on:  
+  pull_request:
+    branches:
+      - main
+
+jobs:  
+  cobacoba:
+    name: Test Pull Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Linux Command
+        run: |
+          git status
+          id
+          ls -lah
+          echo "Halo gais"

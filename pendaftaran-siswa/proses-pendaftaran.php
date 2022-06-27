@@ -6,7 +6,7 @@ include("config.php");
 if(isset($_POST['daftar'])){
 
     // ambil data dari formulir
-    $nama = $mysqli -> real_escape_string($_POST['nama']);
+    $nama = $_POST['nama'];
     $alamat = $mysqli -> real_escape_string($_POST['alamat']);
     $jk = $mysqli -> real_escape_string($_POST['jenis_kelamin']);
     $agama = $mysqli -> real_escape_string($_POST['agama']);
